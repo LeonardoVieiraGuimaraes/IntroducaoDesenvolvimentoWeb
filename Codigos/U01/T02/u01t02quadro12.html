@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+
+<html>
+<head>
+    <meta charset="utf-8" /> <!-- Configuração da codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração da meta tag para a visualização em dispositivos móveis -->
+    <title>Formulário de Login</title> <!-- Título da página exibido na guia do navegador -->
+</head>
+<body>
+    <!-- Início da seção <body> do documento -->
+
+    <form method="GET" action="./home.html"> <!-- Abertura do formulário com método "GET" e ação apontando para "home.html" -->
+        <h1>Login</h1> <!-- Título de primeiro nível para indicar a página de login -->
+
+        <p>
+            <label for="nome_login">Usuário: </label> <!-- Rótulo associado ao campo de entrada "nome_login" -->
+            <input id="nome_login" name="nome_login" type="text" required/> <!-- Campo de entrada de texto para o nome de usuário -->
+        </p>
+
+        <p>
+            <label for="senha_login">Senha: </label> <!-- Rótulo associado ao campo de entrada "senha_login" -->
+            <input id="senha_login" name="senha_login" type="password" required/> <!-- Campo de entrada de senha -->
+        </p>
+
+        <p>
+            <label>
+                <input type="checkbox" name="manterlogado" value="sim" /> Manter logado <!-- Caixa de seleção para "manter logado" -->
+            </label>
+        </p>
+
+        <p>
+            <button type="submit">Login</button> <!-- Botão de envio do formulário -->
+        </p>
+
+        <p> <a href="./view/cadastro.html">Ainda não tem conta?</a></p> <!-- Link para a página de cadastro -->
+        <p> <a href="./view/reset.html">Esqueceu a senha?</a></p> <!-- Link para a página de redefinição de senha -->
+    </form> <!-- Fechamento do formulário -->
+
+</body>
+</html>

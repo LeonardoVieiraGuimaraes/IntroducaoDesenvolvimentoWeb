@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+
+<html>
+
+<head>
+    <meta charset=utf-8 /> <!-- Configuração do conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Configuração da viewport para dispositivos móveis -->
+    <title>Formulário de Login</title> <!-- Título da página exibido na guia do navegador -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inclusão do arquivo de estilo Bootstrap -->
+</head>
+
+<body>
+    <div class="container col-sm-8 bg-primary">
+        <!-- Criação de um container com largura específica e cor de fundo primária -->
+        <div class="row">
+            <form class="needs-validation" method="GET" action="./view/home.html" novalidate>
+                <!-- A classe "needs-validation" é usada para ativar a validação do lado do cliente com Bootstrap -->
+                <!-- "novalidate" evita a validação padrão do navegador -->
+
+                <div class="d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-12-sm">
+                            <h1 class="">Login</h1> <!-- Cabeçalho da página de login -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-12 input-group has-validation">
+                            <!-- A classe "has-validation" é usada para estilizar campos inválidos -->
+                            <label class="input-group-text" for="nome_login">Usuário: </label>
+                            <input class="form-control is-invalid" id="nome_login" type="text" required />
+                            <!-- A classe "is-invalid" é usada para destacar campos inválidos -->
+                            <div class="invalid-feedback">Informe o usuário.</div>
+                            <!-- Mensagem de erro exibida se o campo estiver vazio -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 input-group has-validation">
+                            <label class="input-group-text" for="senha_login">Senha: </label>
+                            <input class="form-control is-invalid" id="senha_login" type="password" required />
+                            <div class="invalid-feedback">Informe a senha.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-12 form-check form-switch">
+                            <input class="form-check-input" role="switch" type="checkbox" name="manterlogado"
+                                value="" />
+                            <label class="form-check-label"> Manter logado </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="row ">
+                        <div class="col-sm-12">
+                            <button class="btn btn-success" type="submit">Login</button> <!-- Botão de login -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a class="btn btn-primary" href="./view/cadastro.html">Ainda não tem conta?</a>
+                            <a class="btn btn-primary" href="./view/reset.html">Esqueceu a senha?</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script para aplicar a validação do lado do cliente com Bootstrap -->
+    <script>
+        (() => {
+            'use strict'
+            // Seleciona todos os formulários nos quais aplicaremos estilos de validação personalizados do Bootstrap
+            const forms = document.querySelectorAll('.needs-validation')
+            // Itera sobre eles e impede o envio se houver campos inválidos
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>

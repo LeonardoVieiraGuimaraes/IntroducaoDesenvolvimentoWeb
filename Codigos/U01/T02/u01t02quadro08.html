@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+
+<html>
+
+<head>
+    <meta charset="utf-8"> <!-- Configuração da codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuração da meta tag para a visualização em dispositivos móveis -->
+    <title>Formulário de Login</title> <!-- Título da página exibido na guia do navegador -->
+</head>
+
+<body>
+    <form method="POST" action="processar_login.php">
+        <!-- Correção do método para "POST" e atribuição de um valor válido ao atributo "action" -->
+        <h1>Login</h1>
+
+        <p>
+            <label for="nome_login">Usuário: </label>
+            <input id="nome_login" name="nome_login" type="text" />
+        </p>
+
+        <p>
+            <label for="senha_login">Senha: </label>
+            <input id="senha_login" name="senha_login" type="password" />
+        </p>
+
+        <p>
+            <label>
+                <input type="checkbox" name="manterlogado" value="sim" /> Manter logado
+            </label>
+        </p>
+
+        <p>
+            <button type="submit">Login</button> <!-- Adição de um botão de envio -->
+        </p>
+
+        <p> <a href="#URL">Ainda não tem conta?</a></p>
+        <p> <a href="#URL">Esqueceu a senha?</a></p>
+    </form>
+</body>
+
+</html>

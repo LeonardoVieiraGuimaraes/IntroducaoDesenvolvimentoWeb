@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário com Bootstrap</title>
+    <!-- Link para o Bootstrap CSS (online) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-##use-the-latest-integrity-value-here##" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Exemplo de Formulário com Bootstrap</h1>
+
+        <!-- Formulário estilizado com Bootstrap -->
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem:</label>
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="idade" class="form-label">Idade:</label>
+                <input type="number" class="form-control" id="idade" min="18" max="100" placeholder="Digite sua idade" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="genero" class="form-label">Gênero:</label>
+                <select class="form-select" id="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-check-label">Escolha suas frutas favoritas:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="fruta1" name="fruta[]" value="maca">
+                    <label class="form-check-label" for="fruta1">Maçã</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="fruta2" name="fruta[]" value="banana">
+                    <label class="form-check-label" for="fruta2">Banana</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="fruta3" name="fruta[]" value="laranja">
+                    <label class="form-check-label" for="fruta3">Laranja</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="foto" class="form-label">Envie uma foto (JPEG ou PNG):</label>
+                <input type="file" class="form-control" id="foto" accept=".jpeg, .jpg, .png" required>
+            </div>
+
+            <!-- Botão de envio do formulário com classe "btn-primary" para estilização -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Scripts do Bootstrap (online) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-##use-the-latest-integrity-value-here##" crossorigin="anonymous"></script>
+</body>
+</html>

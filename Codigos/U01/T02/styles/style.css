@@ -1,0 +1,108 @@
+/* Estilos para o corpo da página */
+body {
+    background-color: rgba(21, 190, 50, 0.63); /* Cor de fundo com transparência */
+    width: 100%; /* Largura total */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px 20px 20px; /* Espaçamento interno */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    font-size: 4rem; /* Tamanho da fonte */
+    line-height: 0; /* Altura da linha */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Layout flexível */
+    height: 50px; /* Altura */
+    padding-top: 20.15px; /* Espaçamento superior */
+    background-color: #db8e1a; /* Cor de fundo */
+}
+
+/* Estilos para o título no cabeçalho */
+h2 {
+    font-size: 2rem; /* Tamanho da fonte */
+    flex: 1; /* Cresce para ocupar espaço disponível */
+    text-transform: uppercase; /* Transformação de texto em maiúsculas */
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #dd4646; /* Cor de fundo */
+    line-height: 1; /* Altura da linha */
+    height: 1rem; /* Altura */
+    display: inline-block; /* Exibe como bloco inline */
+    padding: 1%; /* Espaçamento interno */
+    font-size: 3rem; /* Tamanho da fonte */
+    height: inherit; /* Herda altura do elemento pai */
+    width: 100%; /* Largura total */
+    text-transform: uppercase; /* Transformação de texto em maiúsculas */
+    color: black; /* Cor do texto */
+}
+
+/* Estilos para os botões na barra de navegação */
+nav button {
+    height: 2rem; /* Altura */
+    width: 10rem; /* Largura */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Estilos para a barra lateral (aside) */
+aside {
+    visibility: hidden; /* Inicialmente oculto */
+    width: 180px; /* Largura */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    text-align: center; /* Centraliza o texto */
+    display: block; /* Exibe como bloco */
+    position: fixed; /* Posição fixa na tela */
+    top: 0; /* Alinhado ao topo */
+    right: 0; /* Alinhado à direita */
+    width: 180px; /* Largura */
+    height: 100%; /* Altura total */
+    background-color: #c4bce2; /* Cor de fundo */
+    padding: 50px; /* Espaçamento interno */
+}
+
+/* Estilos para a seção principal (section) */
+section {
+    background-color: rgb(250, 250, 224); /* Cor de fundo */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+/* Estilos para os painéis dentro da seção principal */
+.Painel {
+    border: 0.5rem outset pink; /* Estilo da borda */
+    box-shadow: 0 0 0 1rem skyblue; /* Sombra */
+    outline: 1rem solid skyblue; /* Contorno externo */
+    border-radius: 5px; /* Raio das bordas */
+    margin: 2rem; /* Margem */
+    padding: 1rem; /* Espaçamento interno */
+    outline-offset: 0.5rem; /* Deslocamento do contorno */
+    max-width: 220px; /* Largura máxima */
+    background-color: black; /* Cor de fundo */
+}
+
+/* Estilos para o título nos painéis */
+.Painel h2 {
+    color: white; /* Cor do texto */
+    text-align: right; /* Alinhamento do texto à direita */
+}
+
+/* Estilos para o PainelCentral */
+.PainelCentral {
+    max-width: 220px; /* Largura máxima */
+    border: 0.5rem outset pink; /* Estilo da borda */
+    box-shadow: 0 0 0 1rem skyblue; /* Sombra */
+    outline: 1rem solid skyblue; /* Contorno externo */
+    border-radius: 5px; /* Raio das bordas */
+    margin: 2rem; /* Margem */
+    padding: 1rem; /* Espaçamento interno */
+    outline-offset: 0.5rem; /* Deslocamento do contorno */
+}
+
+/* Estilos para o rodapé */
+footer {
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 2; /* Altura da linha */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    background-color: #bfbaba; /* Cor de fundo */
+}

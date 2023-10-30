@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Bootstrap</title>
+    <!-- Vincule o arquivo CSS do Bootstrap (online) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-##use-the-latest-integrity-value-here##" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Formulário Bootstrap</h1>
+
+        <!-- Formulário Bootstrap -->
+        <form>
+            <!-- Campo de Nome -->
+            <div class="mb-3">
+                <!-- Rótulo do campo de Nome -->
+                <label for="nome" class="form-label">Nome:</label>
+                <!-- Campo de entrada para o Nome -->
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <!-- Campo de Email -->
+            <div class="mb-3">
+                <!-- Rótulo do campo de Email -->
+                <label for="email" class="form-label">Email:</label>
+                <!-- Campo de entrada para o Email -->
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+
+            <!-- Campo de Mensagem (área de texto) -->
+            <div class="mb-3">
+                <!-- Rótulo do campo de Mensagem -->
+                <label for="mensagem" class="form-label">Mensagem:</label>
+                <!-- Área de texto para a Mensagem -->
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Vincule os scripts do Bootstrap (online) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-##use-the-latest-integrity-value-here##" crossorigin="anonymous"></script>
+</body>
+</html>

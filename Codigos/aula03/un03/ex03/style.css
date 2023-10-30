@@ -1,0 +1,41 @@
+/* Arquivo estilos.css */
+
+/* Estilo para o corpo da página */
+body {
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimento padrão */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo cinza escuro */
+    color: #fff; /* Cor do texto branco */
+    text-align: center; /* Centralizar o texto */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centralizar o conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para a imagem */
+img {
+    display: block; /* Remover margens verticais da imagem */
+    margin: 0 auto; /* Centralizar a imagem horizontalmente */
+    max-width: 100%; /* Tamanho máximo da imagem */
+}
+
+/* Estilo para links */
+a {
+    color: #007bff; /* Cor do link azul */
+    text-decoration: none; /* Remover sublinhado dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinhar o link ao passar o mouse */
+}

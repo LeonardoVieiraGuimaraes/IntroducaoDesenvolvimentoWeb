@@ -1,0 +1,40 @@
+h1 {
+    font-size: 100px;
+    color: rgba(70, 84, 99, 0.527);
+  }
+  .paragrafo {
+    font-size: 40px;
+    color: rgb(41, 100, 151);
+  }
+  #id_paragrafo {
+    font-size: 30px;
+    color: rgb(101, 105, 109);
+  }
+
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px;
+  }
+
+  th,
+  td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #cac7c7;
+    color: #fff;
+  }
+
+  .iframe-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iframe-container iframe {
+    width: 48%; /* Define a largura desejada para os iframes (48% para deixar espaço para margens) */
+    border: 1px solid #ccc; /* Adicione uma borda para separar os iframes */
+}
